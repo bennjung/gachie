@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f3f7;
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    width: 100%;  /* 헤더가 화면 전체 너비를 차지 */
+}
+
+/* 헤더 링크 스타일 */
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 로고 스타일 */
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* 네비게이션 스타일 */
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* 네비게이션 링크 스타일 */
+header nav a {
+    margin: 0 15px;
+    color: #555;
+}
+
+header nav a:hover {
+    color: #000;
+}
+
+/* 인증 버튼 스타일 */
+header .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .auth-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .auth-buttons a.signup {
+    color: #fff;
+    background-color: #007bff;
+}
+
+header .auth-buttons a.signup:hover {
+    background-color: #0056b3;
+}
+
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+    width: 320px;
+}
+
+.login-header {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+.login-header a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.login-header a.active {
+    border-bottom: 2px solid #007bff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.options label {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.options a {
+    margin-left: auto;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9em;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}

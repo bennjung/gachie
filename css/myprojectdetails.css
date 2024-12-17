@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.project-details {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.project-details p strong {
+    color: #007bff;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+table td {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+table a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+table a:hover {
+    color: #0056b3;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+p.message {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}

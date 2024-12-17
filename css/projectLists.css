@@ -1,0 +1,159 @@
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+.project-list-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* 검색 섹션 */
+.search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* 프로젝트 타입 버튼 */
+.project-types {
+    display: flex;
+    gap: 10px;
+}
+
+.type-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.type-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.type-btn.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* 타입별 스타일 */
+.type-btn.type-0:not(.active) { /* 학교과제 */
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.type-btn.type-1:not(.active) { /* 공모전 */
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.type-btn.type-2:not(.active) { /* 토이프로젝트 */
+    background-color: #d5c2ee;
+    color: #483d8B;
+}
+
+/* 프로젝트 리스트 */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* 프로젝트 카드 */
+.project-card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 프로젝트 헤더 */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-header h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.project-type {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 타입별 색상 */
+.project-type.type-0 {
+    background-color: #1976d2; /* 학교과제 */
+}
+
+.project-type.type-1 {
+    background-color: #c2185b; /* 공모전 */
+}
+
+.project-type.type-2 {
+    background-color: #483d8B; /* 토이프로젝트 */
+}
+
+/* 설명 */
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* 프로젝트 정보 */
+.project-info {
+    font-size: 12px;
+    color: #777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.project-info .status {
+    color: #28a745; /* 모집중 */
+}

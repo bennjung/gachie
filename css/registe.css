@@ -1,0 +1,219 @@
+/* 공통 컨테이너 스타일 */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* 섹션 스타일 */
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.buttons-group button {
+    margin: 5px 5px 0 0;
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.buttons-group button.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* 텍스트 입력 필드 스타일 */
+input[type="text"] {
+    width: 90%; /* 너비 */
+    padding: 10px; /* 내부 여백 */
+    border: 1px solid #ddd; /* 테두리 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    font-size: 14px; /* 글자 크기 */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 숫자 입력 필드 스타일 */
+input[type="number"] {
+    width: 70px; /* 숫자 필드 크기 */
+    padding: 8px; /* 내부 여백 */
+    border: 1px solid #ddd; /* 테두리 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    font-size: 14px; /* 글자 크기 */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 텍스트 영역 스타일 */
+textarea {
+    width: 100%; /* 너비 */
+    padding: 12px; /* 내부 여백 */
+    border: 1px solid #ddd; /* 테두리 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    font-size: 14px; /* 글자 크기 */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* 포커스 시 스타일 */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #007bff; /* 테두리 색상 변경 */
+    outline: none; /* 기본 포커스 제거 */
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5); /* 외곽선 그림자 */
+}
+
+
+.date-picker input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 태그 스타일 */
+.example-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.example-tag {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.example-tag:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tag-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.tag-item .delete-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.tag-item .delete-btn:hover {
+    color: #ff4757;
+}
+
+/* 모집 분야 스타일 */
+.recruitment-list {
+    margin-top: 10px;
+}
+
+.recruitment-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.recruitment-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recruitment-fields {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.recruitment-role,
+.recruitment-requirement {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.recruitment-count {
+    width: 60px;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 제출 버튼 */
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-button button {
+    font-size: 16px;
+}
+
+/* 삭제 버튼 */
+.delete-btn {
+    background-color: #ff4757;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.delete-btn:hover {
+    background-color: #e84118;
+}

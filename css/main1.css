@@ -1,0 +1,140 @@
+/* 메인 배너 스타일 */
+.main-banner {
+    display: flex; /* Flexbox로 자식 요소 배치 */
+    justify-content: center; /* 부모 요소 안에서 자식 요소들을 중앙에 정렬 */
+    align-items: center; /* 세로축 중앙 정렬 */
+    gap: 40px; /* 콘텐츠와 슬라이더 사이에 간격 추가 */
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+}
+
+/* 콘텐츠 영역 스타일 */
+.main-banner .content {
+    flex: 1; /* 콘텐츠 영역이 가능한 공간을 차지 */
+    max-width: 50%; /* 콘텐츠의 최대 너비 제한 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+
+/* 콘텐츠 내부 요소 스타일 */
+.main-banner .content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.main-banner .content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.main-banner .content button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-banner .content .btn-search {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.main-banner .content .btn-myproject {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* 슬라이더 영역 스타일 */
+.main-banner .slider {
+    flex: 1; /* 슬라이더 영역이 가능한 공간을 차지 */
+    max-width: 600px; /* 슬라이더 최대 너비 (기본값: 800px) */
+    height: 300px; /* 슬라이더 높이 (기본값: 400px) */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px; /* 슬라이더 모서리를 둥글게 설정 */
+}
+
+/* 슬라이드 컨테이너 */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%; /* 슬라이더 컨테이너 크기와 일치 */
+    height: auto; /* 이미지 비율 유지 */
+    object-fit: cover;
+}
+
+/* 프로젝트 리스트 스타일 */
+.project-list {
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+    margin-top: 0;
+}
+
+.project-card .tags span {
+    display: inline-block;
+    color: #555;
+    font-size: 14px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.project-card .details {
+    margin-top: 15px;
+}
+
+.project-card .details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* 떠다니는 화살표 스타일 */
+.scroll-down {
+    position: absolute;
+    top: 400px; /* 배너 내부에서 10% 위로 */
+    left: 50%; /* 화면 가운데 정렬 */
+    transform: translateX(-50%); /* 중앙 정렬을 위한 보정 */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite; /* 애니메이션 추가 */
+}
+
+/* 버튼 호버 효과 */
+.scroll-down:hover {
+    background-color: #0056b3;
+}
+
+/* 화살표 애니메이션 */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translate(-50%, 0);
+    }
+    40% {
+        transform: translate(-50%, -10px);
+    }
+    60% {
+        transform: translate(-50%, -5px);
+    }
+}

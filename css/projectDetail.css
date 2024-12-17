@@ -1,0 +1,122 @@
+.project-detail-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* 첫 번째 섹션 스타일 */
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.status-badges {
+    margin-bottom: 15px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.badge.status {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* type에 따른 스타일 수정 */
+.badge.type-0 {  /* 학교과제 */
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.badge.type-1 {  /* 공모전 */
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.badge.type-2 {  /* 토이프로젝트 */
+    background-color: #D5c2ee;
+    color: #7B68EE;
+}
+
+.project-meta {
+    color: #666;
+    font-size: 14px;
+}
+
+.project-meta span {
+    margin-right: 20px;
+}
+
+.apply-btn {
+    background-color: #1976D2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* 두 번째 섹션 스타일 */
+.project-body {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tech-stack-section,
+.recruit-section,
+.description-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tag {
+    color: #1976D2;
+    background-color: #E3F2FD;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.recruit-item {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.recruit-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.recruit-field {
+    color: #1976D2;
+    font-weight: bold;
+}
+
+.recruit-count {
+    color: #1976D2;
+}
